@@ -54,12 +54,12 @@ const callback = (entries) => {
       if (entry.target.id == "proyectos") {
         numeroAnimacion("#numero", path.dos);
       } else {
-        numeroAnimacion("#numero", path.uno);
+        numeroAnimacion("#numero", path.cero);
       }
       if (entry.target.id == "contacto") {
-        numeroAnimacion("#numero-3", path.tres);
+        numeroAnimacion("#numero3", path.tres);
       } else {
-        numeroAnimacion("#numero-2", path.dos);
+        numeroAnimacion("#numero3", path.cero);
       }
     }
   });
