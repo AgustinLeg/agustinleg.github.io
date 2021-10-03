@@ -5,7 +5,8 @@ const sections = document.querySelectorAll("section");
 const targets = document.querySelectorAll(".target");
 const targetsUP = document.querySelectorAll(".target__up");
 const navItem = document.querySelectorAll(".nav-main__item");
-const socialContainer = document.querySelector('.social__container')
+const socialContainer = document.querySelector('.social__container');
+const headerBlur = document.querySelector('.header-blur');
 
 const path = {
   cero: "M1.9,39.5c0-19.7,15.9-25.8,25.6-25.8c8.7,0,25.1,5.7,25.1,25.8v18.9c0,18.9-14.4,25.8-25.1,25.8c-10,0-25.6-6.6-25.6-25.8 V39.5z M19.2,58.9c0,4,1.3,10.1,8,10.1c8,0,8-8.1,8-10.1V39c0-2.1,0-10.1-8-10.1c-6.9,0-8,6.4-8,10.1V58.9z",
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     targets.forEach((target) => {
       target.style.animation = `anim1 ${target.dataset.delay}s  ease-out`;
       document.querySelector(".social__container").style.bottom = "0";
+      headerBlur.classList.toggle('show')  
     });
   }, 5200);
   navItem.forEach((item) => {
@@ -33,6 +35,8 @@ function toggleNav() {
   navMain.classList.toggle("active");
   document.body.classList.toggle("hidden");
   socialContainer.classList.toggle("show");
+  ;
+
 }
 
 const numeroAnimacion = (targets, value) => {
