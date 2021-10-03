@@ -51,6 +51,11 @@ const numeroAnimacion = (targets, value) => {
 const callback = (entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
+      if (entry.target.id == "sobre-mi") {
+        numeroAnimacion("#numero-1", path.uno);
+      } else {
+        numeroAnimacion("#numero-1", path.cero);
+      }
       if (entry.target.id == "proyectos") {
         numeroAnimacion("#numero", path.dos);
       } else {
