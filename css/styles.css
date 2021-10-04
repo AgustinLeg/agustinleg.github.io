@@ -102,6 +102,19 @@ header .header-blur{
   width: 40px;
   animation: fill 1s ease forwards 3.5s;
 }
+.resume-button{
+  border: 2px solid var(--orange);
+  padding: 15px 50px;
+  color: var(--orange);
+  font-family: 'Poppins',sans-serif;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  transition: background 0.4s ease;
+}
+.resume-button:hover{
+  background: rgba(252, 110, 32, 0.3);
+}
+
 
 #logo path:nth-child(1) {
   stroke-dasharray: 503px;
@@ -348,6 +361,7 @@ header .nav-main {
 }
 .nav-main .nav-main__item .number-count {
   font-size: 1.5rem;
+  margin-right: 15px;
 }
 
 /* SOCIAL */
@@ -510,17 +524,21 @@ section {
   margin-right: 10px;
 }
 .profile__img {
-  transition: all 1s ease;
-  filter: grayscale(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
-.profile__img:hover {
+.profile__img:hover img{
   filter: grayscale(0);
 }
 .profile__img img {
   margin: 40px 0;
   width: 100%;
+  filter: grayscale(1);
   max-width: 300px;
+  transition: all 1s ease;
 }
 
 #proyectos .card {
@@ -615,7 +633,6 @@ section {
 }
 .btn a {
   color: var(--orange);
-  text-decoration: none;
 }
 .btn:hover {
   background: rgba(252, 110, 32, 0.3);
