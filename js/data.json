@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Flama Keys",
+    "description": "Ecommerce. Proyecto final de",
+    "specialText": "CoderHouse",
+    "Speciallink": "https://www.coderhouse.com/",
+    "github": "https://github.com/AgustinLeg/caseshop-leguizamon",
+    "link":"https:google.com",
+    "imageURL":"images/cripto-app.png",
+    "technologies":["ReactJS","Firebase"]
+  },
+  {
+    "title": "CaseShop",
+    "description": "Proyecto final de Desarrollo Web y JavaScript en",
+    "specialText": "Frontend Mentor",
+    "Speciallink": "https://www.coderhouse.com/",
+    "github": "https://github.com/AgustinLeg/todo-app",
+    "link":"https://leguizamon-caseshop.000webhostapp.com/",
+    "imageURL":"images/caseshop.png",
+    "technologies":["HTML & CSS","SASS & Bootstrap","JavaScript","JQuery"]
+  },
+  {
+    "title": "Todo App",
+    "description": "Una Single Page para ayudarme a guardar todas las tareas pendientes que tengo, creada con React.js, usando styleComponents y Context. Challenge de",
+    "specialText": "Frontend Mentor",
+    "Speciallink": "https://www.frontendmentor.io/",
+    "github": "https://github.com/AgustinLeg/todo-app",
+    "link":"https://todo-app-620af2.netlify.app/",
+    "imageURL":"images/todo-app.jpg",
+    "technologies":["ReactJS"]
+  }
+]

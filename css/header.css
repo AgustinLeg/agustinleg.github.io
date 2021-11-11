@@ -1,0 +1,239 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  background: var(--main-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  width: 100%;
+}
+.logo img{
+  max-width: 35px;
+}
+
+nav.nav-main {
+  color: #fff;
+  font-family: var(--secondary-font);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  max-height: 100vh;
+  background: var(--vertical-gradient);
+  transition: height 0.3s ease-in-out;
+}
+
+nav.active {
+  height: 100%;
+}
+
+.nav-main__wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.nav-mobile__name {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-bottom: 25px;
+}
+
+.nav-main__content {
+  height: 100%;
+}
+
+.nav-main__list {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.nav-main__item {
+  margin: 50px 0;
+  text-align: start;
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+
+.social__container {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.social__list {
+  flex-direction: column;
+}
+
+.social__item {
+  margin: 35px 0;
+  font-size: 1.3rem;
+}
+
+header .toggle-nav {
+  background: none;
+  border: none;
+  position: absolute;
+  width: 70px;
+  height: 86px;
+  z-index: 6;
+  top: 20px;
+  right: 20px;
+  outline: none;
+}
+
+header .menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  padding: 20px 0 10px 0;
+  border: none;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  transition: height 0.3s ease;
+}
+
+header .menu:hover {
+  height: calc(86px + 6px);
+}
+
+header .menu .menu__text {
+  margin-top: 10px;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+}
+
+header .menu.normal {
+  background: var(--vertical-gradient);
+}
+header .menu.close {
+  overflow: hidden;
+  height: 92px;
+  transform: translate3d(0);
+  transition: transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
+  background: var(--main-bg);
+}
+header .menu.close.hide-menu {
+  transform: translate3d(0, -100%, 0);
+}
+
+header .menu.normal .menu__burger {
+  width: 1.5rem;
+  height: 1.125rem;
+  background: transparent;
+  position: relative;
+}
+
+header .menu.close .menu__burger {
+  width: 21px;
+  height: 25px;
+  background: transparent;
+  position: relative;
+}
+
+header .menu.normal .menu__burger .line {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+}
+
+header .menu.normal .menu__burger .line:nth-child(1) {
+  top: 0px;
+}
+header .menu.normal .menu__burger .line:nth-child(2) {
+  top: 8px;
+  transition-delay: 0.2s;
+}
+header .menu.normal .menu__burger .line:nth-child(3) {
+  top: 16px;
+  transition-delay: 0.3s;
+}
+
+header .menu.close .menu__burger .line {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: scale(1, 1);
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .menu.close .menu__burger .line:nth-child(1) {
+  transform: scale(1, 1) rotate(45deg);
+}
+header .menu.close .menu__burger .line:nth-child(2) {
+  transform: scale(1, 1) rotate(-45deg);
+}
+
+@media screen and (min-width: 1200px) {
+  header .logo{
+    width: 50% !important;
+  }
+  .logo img{
+    max-width: 20px;
+  }
+  .toggle-nav {
+    display: none;
+  }
+  .nav-mobile__name {
+    display: none;
+  }
+  nav.nav-main {
+    color: #fff;
+    font-family: var(--secondary-font);
+    position: relative;
+    height: 100%;
+    background: transparent;
+  }
+  .nav-main__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .nav-main__list {
+    flex-direction: row;
+  }
+  .nav-main__item {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 40px;
+  }
+  .social__container {
+    position: relative;
+  }
+  .social__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .social__item {
+    margin: 0 40px;
+  }
+}

@@ -1,0 +1,8 @@
+footer {
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+  padding-top: 20px;
+  border-top: 1px solid var(--secondary-bg-light);
+}
