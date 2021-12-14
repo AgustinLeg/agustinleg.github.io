@@ -1,3 +1,4 @@
+AOS.init();
 const btnNav = document.querySelector(".toggle-nav");
 const btnCloseNav = document.querySelector(".menu.close");
 const navMain = document.querySelector(".nav-main");
@@ -48,6 +49,7 @@ function showData(data) {
     const techDiv = document.createElement("div");
     const techList = document.createElement("ul");
     cardDiv.classList.add("card");
+    cardDiv.setAttribute('data-aos','fade-up')
     cardLink.classList.add("card__link");
     cardLink.setAttribute("href", link);
     cardLink.setAttribute("target", "_blank");

@@ -93,12 +93,11 @@ section img {
 #sobre-mi .skills{
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   flex-direction:column;
   text-align: end;
 }
 #sobre-mi .skills .title{
-  /* flex: 1 1 auto; */
   font-size: 2rem;
   margin-right :10px;
 }
