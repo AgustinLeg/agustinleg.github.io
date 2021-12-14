@@ -7,7 +7,7 @@
     "Speciallink": "",
     "github": "https://github.com/AgustinLeg/journal-app",
     "link":"https://journal-app-b3cac5.netlify.app/",
-    "imageURL":"images/cripto-app.png",
+    "imageURL":"images/journal-app.jpg",
     "technologies":["ReactJS","Redux","Firebase","Redux Thunk","SweetAlert2","SASS"]
   },
   {

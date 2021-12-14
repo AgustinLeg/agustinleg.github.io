@@ -90,6 +90,30 @@ section img {
   text-align: start;
 }
 
+#sobre-mi .skills{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction:column;
+  text-align: end;
+}
+#sobre-mi .skills .title{
+  /* flex: 1 1 auto; */
+  font-size: 2rem;
+  margin-right :10px;
+}
+
+#sobre-mi .skills-list{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#sobre-mi .skills-list span{
+  padding: 10px 20px;
+}
+
 #proyectos .card__container {
   display: flex;
   justify-content: center;
