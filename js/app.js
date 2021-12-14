@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleNav() {
   btnCloseNav.classList.toggle("hide-menu");
   navMain.classList.toggle("active");
+  document.querySelector('main').classList.toggle("active");
   document.body.classList.toggle("hidden");
 }
 
@@ -52,12 +53,12 @@ function showData(data) {
     cardLink.setAttribute("target", "_blank");
     techDiv.classList.add("technologies");
     techList.classList.add("reset__list");
-    techDiv.innerHTML = `<p class="order">0${index + 1}</p>`;
     technologies.forEach((tec) => {
       techList.innerHTML += `<li>${tec}</li>`;
     });
     techDiv.appendChild(techList);
 
+    cardDiv.innerHTML = `<div class="big-number-fake">0${index + 1}</div>`;
     cardLeft.classList.add("card-left");
     cardLeft.innerHTML = `
     <p class="title">${title}</p>
@@ -71,12 +72,13 @@ function showData(data) {
         >${specialText}</a
       >.
     </p>
-    <div class="github">
+    <div class="github ">
       <a
         href=${github}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
+        class="hover-color"
         ><i class="fab fa-github"></i
       ></a>
     </div>
@@ -85,7 +87,8 @@ function showData(data) {
     cardRight.classList.add("card-right");
     cardRight.innerHTML += `
     <div class="card__img">
-      <img src=${imageURL} alt="CaseShop Homepage" />
+      <img src=${imageURL} alt="CaseShop Homepage" /> 
+      <div class="card__hover"><div class="card__btn">Ver proyecto</div></div>
     </div>
     `;
     cardRight.appendChild(techDiv);

@@ -1,22 +1,33 @@
 [
+  
+  {
+    "title": "Journal App",
+    "description": "Diario personal, vas a poder guardar tus notas por categorias, agregar imagenes y guardar en favoritos",
+    "specialText": "",
+    "Speciallink": "",
+    "github": "https://github.com/AgustinLeg/journal-app",
+    "link":"https://journal-app-b3cac5.netlify.app/",
+    "imageURL":"images/cripto-app.png",
+    "technologies":["ReactJS","Redux","Firebase","Redux Thunk","SweetAlert2","SASS"]
+  },
   {
     "title": "Flama Keys",
     "description": "Ecommerce. Proyecto final de",
-    "specialText": "CoderHouse",
-    "Speciallink": "https://www.coderhouse.com/",
-    "github": "https://github.com/AgustinLeg/caseshop-leguizamon",
-    "link":"https:google.com",
-    "imageURL":"images/cripto-app.png",
+    "specialText": "https://www.coderhouse.com/",
+    "Speciallink": "https://coderhouse-react-flamakeys.vercel.app/",
+    "github": "https://github.com/AgustinLeg/coderhouse-react-flamakeys",
+    "link":"https://coderhouse-react-flamakeys.vercel.app/",
+    "imageURL":"images/flamakeys.jpg",
     "technologies":["ReactJS","Firebase"]
   },
   {
     "title": "CaseShop",
     "description": "Proyecto final de Desarrollo Web y JavaScript en",
-    "specialText": "Frontend Mentor",
+    "specialText": "CoderHouse",
     "Speciallink": "https://www.coderhouse.com/",
     "github": "https://github.com/AgustinLeg/todo-app",
     "link":"https://leguizamon-caseshop.000webhostapp.com/",
-    "imageURL":"images/caseshop.png",
+    "imageURL":"images/caseshop.jpg",
     "technologies":["HTML & CSS","SASS & Bootstrap","JavaScript","JQuery"]
   },
   {
