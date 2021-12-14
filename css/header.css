@@ -82,7 +82,7 @@ main{
 
 .social__container {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   right: 20px;
   z-index: 20;
 }
